@@ -237,9 +237,9 @@ var startFlag = false;
 var index = 1;
 const intervalID = setInterval(() => {
   if (currentEx == -1) {
-    ex_img.attr("src", `../images/src/sleep.png`);
+    ex_img.attr("src", `images/src/sleep.png`);
   } else {
-    ex_img.attr("src", `../images/ex${currentEx}/ex${currentEx}.${index}.png`);
+    ex_img.attr("src", `images/ex${currentEx}/ex${currentEx}.${index}.png`);
     index = (index % Number(json[`ex${currentEx}`]["slides"])) + 1;
 
     ex_text.text(json[`ex${currentEx}`]["title"]);
@@ -327,7 +327,7 @@ function RightFunc() {
         } else {
           currentEx = preEx + 1;
           if (currentEx > 29) {
-            ex_img.attr("src", `../images/src/end.png`);
+            ex_img.attr("src", `images/src/end.png`);
             clearInterval(intervalID);
             ex_text.text("Всё) Ты молодец :3");
           }
@@ -344,7 +344,7 @@ function RightFunc() {
       } else {
         currentEx = preEx + 1;
         if (currentEx > 29) {
-          ex_img.attr("src", `../images/src/end.png`);
+          ex_img.attr("src", `images/src/end.png`);
           clearInterval(intervalID);
           ex_text.text("Всё) Ты молодец :3");
         }
