@@ -332,7 +332,7 @@ function RightFunc() {
             ex_text.text("Всё) Ты молодец :3");
           }
         }
-      }, 3000);
+      }, 13000);
     } else {
       if ((preEx == 15 && pressCount > 0) || (preEx == 29 && superCount > 0)) {
         currentEx = preEx;
