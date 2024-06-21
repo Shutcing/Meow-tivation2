@@ -89,11 +89,16 @@
     </div>
   </body>
     <script>
-    function playAudio() {
-      var audio = new Audio("audio.mp3");
+    function playAudio(name) {
+      var audio = new Audio(name);
       audio.play();
     }
-
-    playAudio();
+    
+    playAudio("audio1.mp3");
+    SetTimeout(() => {
+      var audio = new Audio("audio1.mp3");
+      audio.pause();
+      playAudio("audio2.mp3");
+    }, 1233000);
   </script>
 </html>
