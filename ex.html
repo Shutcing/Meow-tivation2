@@ -94,15 +94,13 @@
       audio.play();
     }
 
-    navigator.getUserMedia({audio: true}, function() {
-      playAudio("audio2.mp3");
-      
-      setTimeout(() => {
-        audio.pause(); // Используем глобальную переменную audio
-        playAudio("audio1.mp3");
-      }, 1233000);
-    }, function() {
-      
+    document.addEventListener("click", function() {
+        playAudio("audio2.mp3");
+  
+        setTimeout(() => {
+          audio.pause(); // Используем глобальную переменную audio
+          playAudio("audio1.mp3");
+        }, 1233000);
     });
 </script>
 
