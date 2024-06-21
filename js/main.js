@@ -182,7 +182,7 @@ var json = {
     slides: 4,
   },
   ex24: {
-    count: "15",
+    count: "20",
     time: "1",
     title: "Попеременная планка на локтях и на прямых лапках",
     descr: "",
@@ -196,14 +196,14 @@ var json = {
     slides: 2,
   },
   ex26: {
-    count: "10",
+    count: "15",
     time: "0",
     title: "Махи ножкой на 30° с опорой на стенку",
     descr: "",
     slides: 2,
   },
   ex27: {
-    count: "10",
+    count: "15",
     time: "0",
     title: "Махи ножкой вбок. Лапки на талии",
     descr: "",
